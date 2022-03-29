@@ -1,4 +1,9 @@
-<h1> <%= @product.name %> </h1>
-    <p> <%= @product.description %> </p>
-        <strong> Price: </strong>
-        <%= number_to_currency @product.price %>
+<div>
+<h2> <%= @product.name %> </h2>
+<p> <%= @product.description %> </p>
+<strong> Price: </strong>
+<%= number_to_currency @product.price %>
+</div>
+<p>
+    <%= link_to 'Homepage', products_path %>
+</p>
